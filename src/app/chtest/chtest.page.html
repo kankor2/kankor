@@ -1,0 +1,41 @@
+<ion-header style='direction: rtl;'>
+  <ion-toolbar color="primary">
+    <ion-icon name="md-arrow-forward" style='float: right;font-size: 25px;margin: 0 10px' (click)='nav()'></ion-icon>
+    <ion-title style='font-size: 20px;'>  آزمون</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="none" padding style="background-image: url(../../assets/img/chtestbg.png);direction: rtl">
+  <ion-grid style='width: 90%'>
+    <ion-row>
+      <ion-col size='12'>
+	<select id="select" style='	direction: rtl;width: 100%' (change) = 'CheckGrade()'>
+  		<option value="none" style="direction: rtl">انتخاب صنف</option>
+  		<option value="10">دهم</option>
+  		<option value="11">یازدهم</option>
+  		<option value="12">دوازدهم</option>
+	</select>
+</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col size='12'>
+	<select style='	direction: rtl;width: 100%;' id='selectSub'>
+  		<option value="none" style="direction: rtl">انتخاب مضمون</option>
+  		<option value="saab">جغرایفیه</option>
+  		<option value="mercedes">دری</option>
+  		<option value="audi">بیولوژی</option>
+  		<option value="audi">پشتو</option>
+  		<option value="audi">تفسیر</option>
+  		<option value="audi">دینی</option>
+  		<option value="audi">جیولوژی</option>
+	</select>
+</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size='12'>
+  <ion-button color="secondary" style='width: 100%'>شروع آزمون</ion-button>
+  </ion-col>
+  </ion-row>
+  </ion-grid>
+	
+</ion-content>
