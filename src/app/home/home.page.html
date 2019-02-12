@@ -1,32 +1,31 @@
 <ion-content>
-    <img src="../../assets/icon/Setting_ico.png" style="width: 7%; position: absolute;right: 20px;top: 20px">
+    <img (click) = 'goSetting()' src="../../assets/icon/Setting_ico.png" style="width: 7%; position: absolute;right: 20px;top: 20px">
 
 	<ion-grid style="height: 100%; background-image: url(../../assets/img/bg.png); background-size: cover;" class='content'>
   		<ion-row justify-content-center align-items-center style="height: 100%">
-
     		<ion-grid>
     			<ion-row align-items-center>
-    				<ion-col size='6'>
+    				<ion-col size='6' (click)="pushPage('test')">
     					<img src="../../assets/icon/test_ico.png">
                         <p>آزمون</p>
     				</ion-col>
-    				<ion-col size='6'>
+    				<ion-col size='6' (click)="pushPage('hard')">
     					<img src="../../assets/icon/box_ico.png">
                         <p>سوالات سخت</p>
     				</ion-col>
     			</ion-row>
     			<ion-row>
-    				<ion-col size='6'>
+    				<ion-col size='6' (click)="pushPage('share')">
     					<img src="../../assets/icon/share_ico.png">
                         <p>اشتراک گذاری</p>
     				</ion-col>
-    				<ion-col size='6'>
-    					<img src="../../assets/icon/about_icon.png">
+    				<ion-col size='6' (click)="pushPage('about')">
+    				    <img src="../../assets/icon/about_icon.png">
                         <p>درباره</p>
     				</ion-col>
     			</ion-row>
-
-                <img src="../../assets/icon/Follow-fb.png">
+                
+                <a href='https://www.facebook.com/' target="blank"><img src="../../assets/icon/Follow-fb.png"></a>
     		</ion-grid>
   		</ion-row>
 	</ion-grid>
