@@ -10,14 +10,6 @@ export class ChtestPage implements OnInit {
 
   constructor(private router: Router) { }
 
-  customAlertOptions: any = {
-    header: 'انتخاب صنف',
-    translucent: true
-  };
-  customOptions: any = {
-    header: 'انتخاب مضمون',
-    translucent: true
-  };
   ngOnInit() {
 
   }
@@ -25,12 +17,11 @@ export class ChtestPage implements OnInit {
   	this.router.navigate(['../home']);
   }
   CheckGrade(){
+    console.log('ali');
   	if($('#select').val() != '10'){
-  		console.log($('#selectSub').children()[7].remove());
+  		
   	}else{
-  		if($('#selectSub').children()[7] == undefined){
-  			$('#selectSub').append("<option value='audi'>جیولوژی</option>");
-  		}
+  		
   	}
   }
 
